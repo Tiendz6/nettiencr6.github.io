@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+body{
+    height: 100vh;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+    padding: 12px;
+}
+
+a:hover{
+    color:rgb(13, 0, 255);
+    font-style: oblique;
+}
+
+/* Header */
+header{
+    position: relative;
+}
+#myHeader{
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgb(218, 255, 231);
+    z-index: 1;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1080px;
+    padding-bottom: 2px;
+}
+
+.navbar a img{
+    display: flex;
+    align-items: center;
+    width: 200px;
+}
+
+.navbar .logo a{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.navbar .links{
+    display: flex;
+    gap: 1rem
+}
+
+#active{
+    color: rgb(0, 255, 72);
+}
+.navbar .toggle_btn{
+    color: #000000;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+    margin-right: 20px;
+}
+
+.action_btn{
+    margin-right: 2px;
+    background-color: orange;
+    color: #000000;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+.action_btn:hover{
+    scale: 1.05;
+    color: #000000;
+}
+.action_btn:active{
+    scale: 0.95;
+}
+
+/* DROPDOWN MENU */
+.dropdow_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 90px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdow_menu.open{
+    position: fixed;
+    height: 520px;
+    border: 1px solid aquamarine;
+}
+.dropdow_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdow_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/* Giữ HEADER */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+/* HERO */
+#hero{
+    height: calc(100% - 60px);
+    max-width: 1080px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+
+.main--content .title h2{
+    margin-top: 15px;
+    color: #000000;
+}
+.cards {
+    display: flex;
+    gap: 1rem;
+}
+
+.card {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 20px;
+    min-width: 160px;
+    height: auto;
+    justify-content: space-between;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #000000;
+}
+.card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 255, 89, 0.93);
+}
+
+.card h2{
+    margin-top: 10px;
+}
+.card button{
+    margin-top: 10px;
+}
+.card h4{
+    margin-top: 20px;
+}
+
+.card--stats img{
+    width: 80px;
+}
+.card--title {
+    color: rgb(0, 81, 255);
+}
+
+.card--icon--lg {
+    color: rgb(0, 81, 255);
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    flex-wrap: wrap-reverse; /* làm 2div trong thẻ tách đẹp hơn khi thu nhỏ */
+    justify-content: space-between;
+    justify-items: center;
+    color: black;
+    display: flex;
+    margin: 30px auto;
+    max-width: 1080px;
+    padding-bottom: 50px;
+}
+
+.info h1{
+    margin-top: 2px;
+    font-size: 35px;
+}
+.info i{
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.173);
+    border-radius: 25px;
+}
+.link-info{
+    display: flex;
+}
+.link-info li{
+    margin-top: 2px;
+}
+.link-info i{
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.09);
+    border-radius: 25px;
+}
+
+
+/* CAMERA */
+.camera-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px auto;
+}
+.camera-1 video{
+    border-radius: 10px;
+    width: 400px;
+    margin: 15px 0;
+}
+/* ACCOUNT */
+.account{
+    display: none;
+}
+.tool{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px auto;
+    max-width: 1080px;
+}
+.tool .add-button{
+    border: 1px solid #000000;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #0496ff;
+    cursor: pointer;
+}
+
+.tool .add-button:hover{
+    background-color: #6804ff;
+}
+.tool .search {
+    background-color: #f1f4f8;
+    border-radius: 25px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.tool .search input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    text-indent: 15px;
+    width: 85%;
+}
+
+.tool .search button {
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.tool .search button i {
+    font-size: 1.1rem;
+    color: #0471ff;
+}
+.Info-container{
+    border: 1px solid #000000;
+}
+#Info-Account{
+    border: 1px solid #fff;
+    display: flex;
+    background-color: #0471ff;
+}
+#Info-Account h4{
+    float: left;
+}
+#Info-Account .Thaotac{
+    border: 1px solid #fff;
+    width: 150px;
+    padding: 10px;
+}
+#Info-Account .Taikhoan{
+    border: 1px solid #fff;
+    width: 250px;
+    padding: 10px;
+}
+#Info-Account .Matkhau{
+    border: 1px solid #fff;
+    width: 250px;
+    padding: 10px;
+}
+#Info-Account .Loai{
+    border: 1px solid #fff;
+    width: 200px;
+    padding: 10px;
+}
+#Info-Account .Ghichu{
+    border: 1px solid #fff;
+    width: 240px;
+    padding: 10px;
+}
+.Info-AccountOK{
+    border: 1px solid #fff;
+    height: 330px;
+    overflow: hidden;
+    background-color: #ffffff36;
+    color: #000000;
+}
+.Info-AccountOK:hover{
+    overflow-y: scroll;
+}
+/* RESPONSIVE DESIGN */
+@media(max-width: 980px){
+    .navbar .links,
+    .navbar .action_btn{
+        display: none;
+    }
+    .navbar .toggle_btn{
+        display: block;
+    }
+    .dropdow_menu{
+        display: block;
+    }
+}
+@media(max-width: 1080px){
+    .info,
+    .link-info{
+        margin: 15px auto;
+    }
+    .camera-1{
+        justify-content: center;
+    }
+    .cards{
+        overflow-x: scroll;
+    }
+}
+
+@media(max-width: 576px){
+    .dropdow_menu{
+        left: 2rem;
+        width: unset;
+    }
+}

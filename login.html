@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/styleslogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>NetVip TienCr6</title>
+</head>
+<body>
+    <audio autoplay src="assets/images/ailogin.mp3"></audio>
+    <div class="sm">
+        <select name="number_machine" id="number_machine">
+            <option value="today">Máy chủ</option>
+            <option value="lastweek">Máy 1</option>
+            <option value="lastmonth">Máy 2</option>
+            <option value="lastyear">Máy 3</option>
+            <option value="alltime">Máy 4</option>
+            <option value="lastweek">Máy 5</option>
+            <option value="lastmonth">Máy 6</option>
+            <option value="lastyear">Máy 7</option>
+            <option value="alltime">Máy 8</option>
+            <option value="lastweek">Máy 9</option>
+            <option value="lastmonth">Máy 10</option>
+            <option value="lastyear">Máy 11</option>
+            <option value="alltime">Máy 12</option>
+            <option value="lastmonth">Máy 13</option>
+            <option value="lastyear">Máy 14</option>
+            <option value="alltime">Máy 15</option>
+        </select>
+    </div>
+    <div id="wrapper">
+        <form action="" id="form-signin" onsubmit="signin()">
+            <h1 class="form-heading">ĐĂNG NHẬP</h1>
+            <div class="form-group">
+                <i class="fa-solid fa-user-shield"></i>
+                <input type="text" class="form-input" placeholder="Tên tài khoản" id="username">
+            </div>
+            <div class="form-group">
+                <i class="fa-solid fa-key"></i>
+                <input type="password" class="form-input" placeholder="Mật khẩu" id="password">
+                <div id="eye"><i class="fa-regular fa-eye"></i></div>
+            </div>
+            <input type="submit" value="Đăng nhập" class="form-submit">
+            <a href="/signup.html">Tạo tài khoản</a>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="assets/js/login.js"></script>
+</body>
+    <script src="https://kit.fontawesome.com/bbdb6f466d.js" crossorigin="anonymous"></script>
+</html>

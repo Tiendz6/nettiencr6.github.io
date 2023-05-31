@@ -6,7 +6,9 @@ function signin(){
   var data= JSON.parse(user);
   if( username == "admin" && password == "123"){
     window.location.href="admin.html";
-    alert("Đăng nhập thành công")
+  }
+  else if(username == "tiencr6" && password == "123"){
+    window.location.href="index.html"
   }
   else if( username == data.username && password == data.password){
     window.location.href="index.html";

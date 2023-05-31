@@ -30,7 +30,7 @@ function renderAccount() {
     value.username +
     '</div><div class="Mat_khau">' +
     value.password +
-    '</div><div class ="So_tien">' +
+    '</div><div class="So_tien">' +
     value.coin;
     '</div></div>'
   });

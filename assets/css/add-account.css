@@ -1,0 +1,89 @@
+.wrapper{
+    z-index: 1;
+    position: absolute;
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%); /* This is a shorthand oftranslateX(-50%) and translateY(-50%) */
+    height: 450px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: none;
+}
+.wrapper.open{
+    display: block;
+}
+.wrapper .x{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: blue;
+    font-size: 25px;
+}
+.wrapper .x:hover{
+    color: #ff0000;
+}
+#form-signup{
+    width: 300px;
+    height: 450px;
+    flex-grow: 1;
+    padding: 50px 40px 50px;
+    border: 1px solid blue;
+    border-radius: 20px;
+    z-index: 1;
+}
+.form-heading{
+    font-size: 25px;
+    color: #0177C1;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.form-group{
+    border-bottom: 1px solid #0177C1;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: flex;
+}
+.form-group i{
+    color: #0177C1;
+    font-size: 20px;
+    padding-right: 10px;
+}
+.form-input{
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: #0177C1;
+    flex-grow: 1;
+    font-size: 20px;
+}
+.form-input::placeholder{
+    color: #0177C1;
+}
+.form-submit{
+    background: transparent;
+    border: none;
+    color: #ffff;
+    width: 200px;
+    text-transform: uppercase;
+    padding: 6px 10px;
+    transition: 0.3s ease-in-out;
+    margin-top: 30px;
+    font-size: 22px;
+    background-color: #D63D3D;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+.form-submit:hover{
+    scale: 1.05;
+}
+@media(max-width: 576px){
+    .wrapper{
+        width: 100%;
+    }
+    #form-signup{
+        width: 100%;
+    }
+}

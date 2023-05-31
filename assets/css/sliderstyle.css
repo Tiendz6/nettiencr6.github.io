@@ -18,12 +18,19 @@
     height: 100%;
     object-fit: cover;
 }
+.slider .buttons{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 45%;
+    width: 100%;
+}
 .slider .buttons button{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #fff;
-    color: #fff;
+    width: 30px;
+    height: 75px;
+    border-radius: 5px;
+    background-color: #00000024;
+    color: #ffffff;
     border: none;
     font-family: monospace;
     font-weight: bold;
@@ -55,14 +62,18 @@
     .slider{
         height: 250px;
         border-radius: 20px;
-        margin-left: 15px;
     }
     .slider .list{
         transition: 0.5s;
     }
     .slider .list img{
-        width: 75%;
-        height: 300px;
-        object-fit: cover;
+        width: auto;
+        height: 250px;
+    }
+    .slider .buttons{
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        top: 40%;
     }
 }

@@ -24,6 +24,7 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }
+  
 body{
     height: 100vh;
     background-color: #fff;
@@ -340,50 +341,40 @@ footer {
 }
 .Info-container{
     border: 1px solid #000000;
-}
-#Info-Account{
-    border: 1px solid #fff;
-    display: flex;
-    background-color: #0471ff;
-}
-#Info-Account h4{
-    float: left;
-}
-#Info-Account .Thaotac{
-    border: 1px solid #fff;
-    width: 150px;
-    padding: 10px;
-}
-#Info-Account .Taikhoan{
-    border: 1px solid #fff;
-    width: 250px;
-    padding: 10px;
-}
-#Info-Account .Matkhau{
-    border: 1px solid #fff;
-    width: 250px;
-    padding: 10px;
-}
-#Info-Account .coin{
-    border: 1px solid #fff;
-    width: 200px;
-    padding: 10px;
-}
-#Info-Account .Ghichu{
-    border: 1px solid #fff;
-    width: 240px;
-    padding: 10px;
-}
-.Info-AccountOK{
-    border: 1px solid #fff;
-    height: 330px;
-    overflow: hidden;
-    background-color: #ffffff36;
     color: #000000;
+    max-width: 1080px;
 }
-.Info-AccountOK:hover{
-    overflow-y: scroll;
+.Info-container .header-account{
+    display: flex;
+    background-color: #0496ff;
+    color: #fff;
+    font-size: larger;
 }
+.Info-container .account-container{
+    display: flex;
+    color: black;
+}
+.STT{
+    width: 50px;
+    border: 1px solid #3f04ff;
+}
+.Thao_tac{
+    width: 150px;
+    border: 1px solid #3f04ff;
+}
+.Tai_khoan{
+    width: 280px;
+    border: 1px solid #3f04ff;
+}
+.Mat_khau{
+    width: 280px;
+    border: 1px solid #3f04ff;
+}
+.So_tien{
+    width: 319px;
+    border: 1px solid #3f04ff;
+}
+
 /* RESPONSIVE DESIGN */
 
 @media(max-width: 1080px){

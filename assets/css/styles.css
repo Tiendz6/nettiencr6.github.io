@@ -386,6 +386,6 @@ footer {
 @media(max-width: 576px){
     .dropdow_menu{
         left: 2rem;
-        width: unset;
+        width: 576px;
     }
 }

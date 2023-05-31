@@ -11,6 +11,7 @@ function signup(){
   var json= JSON.stringify(user);
   localStorage.setItem(username,json);
   alert("ĐĂNG KÝ THÀNH CÔNG");
+  window.location.href="account.html"
 }
 
 /*Bấm nút add account*/
